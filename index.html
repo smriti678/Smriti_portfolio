@@ -1,0 +1,372 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Smriti Pyakurel | Software Engineering Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f8faf9;
+      color: #25372e;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #e5f0e9;
+      padding: 75px 8% 65px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: clamp(32px, 5vw, 48px);
+      margin-bottom: 12px;
+      color: #204d37;
+    }
+
+    header p {
+      color: #5b7164;
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    .hero-button {
+      display: inline-block;
+      margin-top: 22px;
+      padding: 11px 25px;
+      background: #286b49;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .hero-button:hover {
+      background: #194a31;
+      transform: translateY(-2px);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      padding: 16px;
+      background: white;
+      border-bottom: 1px solid #e5ebe7;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #345b46;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    section {
+      padding: 55px 9%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #286b49;
+      font-size: 27px;
+      margin-bottom: 22px;
+    }
+
+    .about-text {
+      max-width: 750px;
+      color: #627067;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skill {
+      background: #e5f0e9;
+      color: #286b49;
+      padding: 8px 16px;
+      border-radius: 25px;
+      font-size: 14px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 23px;
+    }
+
+    .card {
+      background: white;
+      padding: 27px;
+      border: 1px solid #e5ebe7;
+      border-radius: 15px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(30, 75, 48, 0.08);
+    }
+
+    .card h3 {
+      color: #285c40;
+      margin-bottom: 12px;
+      font-size: 20px;
+    }
+
+    .card p {
+      color: #69766e;
+      font-size: 14px;
+      margin-bottom: 13px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #edf5ef;
+      color: #326b4b;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      margin: 3px 2px;
+    }
+
+    .project-link {
+      display: inline-block;
+      margin-top: 15px;
+      color: #26734e;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .project-link:hover {
+      text-decoration: underline;
+    }
+
+    .contact {
+      background: #e5f0e9;
+      border-radius: 16px;
+      padding: 35px;
+    }
+
+    .contact a {
+      color: #286b49;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact p {
+      margin: 10px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #204d37;
+      color: white;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 55px 6%;
+      }
+
+      section {
+        padding: 40px 6%;
+      }
+
+      nav {
+        gap: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Hi, I'm Smriti Pyakurel 👋</h1>
+
+    <p>Computer Science Graduate | Aspiring Software Engineer</p>
+
+    <p>
+      Passionate about learning, problem-solving and building
+      practical software applications.
+    </p>
+
+    <a href="#projects" class="hero-button">
+      Explore My Projects
+    </a>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+
+    <p class="about-text">
+      I have a background in Computer Science and an interest
+      in software development, programming and database
+      management. Through academic and personal projects,
+      I have explored different technologies and gained
+      practical experience in developing applications.
+
+      I enjoy learning new concepts, solving problems and
+      continuously improving my technical skills.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+
+    <div class="skills">
+      <span class="skill">Python (Beginner)</span>
+      <span class="skill">JavaScript</span>
+      <span class="skill">HTML</span>
+      <span class="skill">CSS</span>
+      <span class="skill">React</span>
+      <span class="skill">Node.js</span>
+      <span class="skill">PHP</span>
+      <span class="skill">MySQL</span>
+      <span class="skill">SQL</span>
+      <span class="skill">GitHub</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="projects">
+
+      <div class="card">
+        <h3>Travelscape</h3>
+
+        <p>
+          A smart online travel booking and tour management
+          platform developed as my final year project.
+        </p>
+
+        <span class="tag">React</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">MySQL</span>
+
+        <br>
+
+        <a
+          class="project-link"
+          href="https://github.com/smriti678/FinalYearProject"
+          target="_blank"
+          rel="noopener noreferrer">
+          View on GitHub →
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>Weather App</h3>
+
+        <p>
+          A web-based weather application developed to
+          explore web technologies, data handling and
+          database integration.
+        </p>
+
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">PHP</span>
+        <span class="tag">SQL</span>
+
+        <br>
+
+        <a
+          class="project-link"
+          href="https://github.com/smriti678/Weather_App"
+          target="_blank"
+          rel="noopener noreferrer">
+          View on GitHub →
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>Task Tracker Application</h3>
+
+        <p>
+          An application developed to organize, manage
+          and track tasks through a software development
+          project.
+        </p>
+
+        <span class="tag">Application Development</span>
+
+        <br>
+
+        <a
+          class="project-link"
+          href="https://github.com/smriti678/Task-Tracker"
+          target="_blank"
+          rel="noopener noreferrer">
+          View on GitHub →
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact">
+      <h2>Let's Connect!</h2>
+
+      <p>
+        Email:
+        <a href="mailto:smritipyakurel35@gmail.com">
+          smritipyakurel35@gmail.com
+        </a>
+      </p>
+
+      <p>
+        GitHub:
+        <a href="https://github.com/smriti678" target="_blank">
+          github.com/smriti678
+        </a>
+      </p>
+
+      <p>
+        LinkedIn:
+        <a href="https://linkedin.com/in/smriti-pyakurel-b4774a40b/"
+           target="_blank">
+          Connect with me
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Smriti Pyakurel | Personal Portfolio
+  </footer>
+
+</body>
+</html>
